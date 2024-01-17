@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Precisão Roupas</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/precisao.png">
+	<link rel="stylesheet" href="css/estilo.css" type="text/css">
+	  <script>
+	  	function carregaImagem1 () {
+	  		document.getElementById("trocar").src="imagens/bermudap.jpg"
+	  	}
+
+	  	function carregaImagem2 () {
+	  		document.getElementById("trocar").src="imagens/bermudas.jpg"
+	  	}
+
+	  	function carregaImagem3 () {
+	  		document.getElementById("trocar").src="imagens/bermudat.jpg"
+	  	}
+	  </script>
+  </head>
+
+  <body>
+  	<header>
+  		<div class="caixa">
+  			<img src="imagens/imagem_principal.png" width=200 height="200">
+  			<nav>
+			 <ul>
+              <li> <a href="camisetas.html"> Camisetas </a></li>
+              <li> <a href="bermudas.html"> Bermudas </a></li>
+              <li> <a href="tenis.html"> Tênis </a></li>
+			  <li> <a href="index.html"> Home </a></li></li>
+			 </ul>
+
+  			</nav>
+  		</div>
+
+
+  	</header>
+  	<main>
+		<div class="caixa_detalhes">
+  	  
+        <img src="imagens/bermudap.jpg" id="trocar">
+	  
+	 
+	     <ul>
+		   <li>  <img src="imagens/bermudap.jpg" class="imagem_miniatura" onclick="carregaImagem1()"></li>
+		   <li>  <img src="imagens/bermudas.jpg" class="imagem_miniatura" onclick="carregaImagem2()"></li>
+		   <li>  <img src="imagens/bermudat.jpg" class="imagem_miniatura" onclick="carregaImagem3()"></li>
+		  
+		  </ul>  
+        <div class="descricao_detalhes">
+			<p class="texto_principal"> Bermuda </p>
+			<p class="texto_principal"> R$ 46,00 </p>
+			<p class="texto_secundario"> 50% Algodão 50% Poliéster, </p>
+
+		</div>
+	</div>
+  	</main>
+  	<footer>
+     <span class="rodape"> Siga-nos nas redes sociais </p> 
+
+   </footer>
+    
+	
+  </body>
+</html>

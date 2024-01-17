@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*zerando a página*/
+}
+
+@font-face{
+  font-family:"minha fonte";
+  src: url("../fontes/FiraSans-Bold.ttf");
+}
+
+@font-face{
+	font-family:"outra fonte";
+	src: url("../fontes/Montserrat-Light.ttf");
+}
+
+ul,ol{
+	list-style: none;
+}
+
+header{
+	background: #484848;
+}
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;/*centralizar*/;
+}
+
+nav{
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	font-family: "minha fonte";
+	display: inline;
+	font-size: 20px;
+	margin: 0 0 0 30px;
+	color: rgb(213,213,213);
+}
+
+nav li:hover{
+	color: white;
+	font-size: 21px;
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+
+.produtos li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 4px 1.5%;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	border: 2px solid #484848;
+	border-radius: 10px;
+	height: 330px;
+}
+
+.p1{
+	font-family: "minha fonte";
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.p2{
+	font-family: "outra fonte";
+	font-size: 18px;
+	color: #06C;
+}
+
+.produtos li:hover{
+	border-color: #06C;
+}
+
+.produtos li:hover .p1{
+	font-size: 22px;
+}
+
+footer{
+	font-family: 'outra fonte';
+	text-align: center;
+	background: #484848;
+	padding: 30px 0;
+	margin-top: 133px;
+}
+
+.rodape{
+	color: rgb(213,213,213);
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.caixa_detalhes{
+	position: relative;
+	width: 940px;
+	margin: 0 auto; /*centralizado*/
+	padding: 50px;
+}
+
+.caixa_detalhes li{
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px;
+	padding: 5px 5px;
+	border: 1px solid #484848;
+	border-radius: 4px;
+}
+
+.caixa_detalhes li:hover{
+	border-color: #06c;
+}
+
+.descricao_detalhes{
+	position: absolute;
+	top: 20px;
+	left: 400px;
+	padding: 10px;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+}
+
+.texto_principal{
+	font-family: "minha fonte";
+	font-size: 40px;
+	margin: 0 0 0 30px;
+	color: #000;
+	text-align: left;
+
+}
+
+.texto_secundario{
+  font-family: "outra fonte";
+	font-size: 30px;
+	padding-top: 10px;
+	color: #000;
+}
+
+.imagem_miniatura{
+	width: 50px;
+	height: 50px;
+}
+
+/*mudar a cor do link-tirar o azul*/
+nav li a:link{
+	color: rgb(213, 213, 213);
+}
+
+/*mudar a cor do link depois de visitado-tirar o roxo*/
+nav li a:visited{;
+	color: white;
+}
